@@ -86,6 +86,9 @@ spec:
           envFrom:
           - secretRef:
               name: db-secret
+          envFrom:
+          - configMapRef:
+              name: app-configmap
 ---
 
 apiVersion: apps/v1
